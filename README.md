@@ -1,4 +1,4 @@
-# 🌐 Projeto de Extensão Beira Linha — Aulas de Front-End
+# 🌐 Projeto de Extensão Beira Linha
 
 ## 📘 Sobre o Projeto
 Este repositório faz parte de um **projeto de extensão universitária** dedicado ao ensino de **desenvolvimento Front-End**.  
