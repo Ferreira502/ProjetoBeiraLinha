@@ -1,0 +1,189 @@
+body {
+  background-color: #ffffff;
+  color: #222;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #0077ff;
+  border-bottom: 3px solid #0077ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+header {
+  background-color: #f3f7fb;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+img {
+  height: 100px;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+input[type="text"] {
+  display: none;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #0077ff;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s ease;
+  display: none;
+}
+
+button:hover {
+  background-color: #005fd1;
+}
+
+/* Exibir elementos HTML */
+#logoToggle:checked ~ header img,
+#pesquisaToggle:checked ~ header input,
+#pesquisaToggle:checked ~ header .searchBtn,
+#favoritoToggle:checked ~ header .favBtn,
+#carrinhoToggle:checked ~ header .cartBtn {
+  display: inline-block;
+}
+
+/* Alinhar à esquerda quando adicionar elementos */
+#logoToggle:checked ~ header,
+#pesquisaToggle:checked ~ header,
+#favoritoToggle:checked ~ header,
+#carrinhoToggle:checked ~ header {
+  justify-content: flex-start;
+}
+
+/* Mostrar código HTML */
+pre {
+  display: none;
+  background-color: #f1f1f1;
+  color: #0044aa;
+  text-align: left;
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  white-space: pre;
+  border-left: 4px solid #0077ff;
+}
+
+/* Mostrar blocos de código */
+#logoToggle:checked ~ .html-section #logoCodigo,
+#pesquisaToggle:checked ~ .html-section #pesquisaCodigo,
+#favoritoToggle:checked ~ .html-section #favoritosCodigo,
+#carrinhoToggle:checked ~ .html-section #carrinhoCodigo {
+  display: block;
+}
+
+/* -------- CSS INTERAÇÕES -------- */
+
+/* Header Tamanhos */
+#tamanho1:checked ~ header { height: 60px; }
+#tamanho2:checked ~ header { height: 100px; }
+#tamanho3:checked ~ header { height: 150px; }
+
+/* Header Posicionamento */
+#pos1:checked ~ header { justify-content: center; }
+#pos2:checked ~ header { justify-content: space-between; }
+#pos3:checked ~ header { justify-content: flex-start; }
+
+/* Tamanho dos Ícones */
+#iconSmall:checked ~ header img,
+#iconSmall:checked ~ header button {
+  transform: scale(0.8);
+}
+
+#iconMedium:checked ~ header img,
+#iconMedium:checked ~ header button {
+  transform: scale(1);
+}
+
+#iconLarge:checked ~ header img,
+#iconLarge:checked ~ header button {
+  transform: scale(1.3);
+}
+
+/* Box Model */
+#marginToggle:checked ~ header { margin: 20px; }
+#paddingToggle:checked ~ header { padding: 25px; }
+#borderToggle:checked ~ header {
+  border: 2px solid #0077ff;
+  border-radius: 10px;
+}
+
+/* Mostrar códigos CSS */
+#tamanho1:checked ~ .css-section #tam1Codigo,
+#tamanho2:checked ~ .css-section #tam2Codigo,
+#tamanho3:checked ~ .css-section #tam3Codigo,
+#pos1:checked ~ .css-section #pos1Codigo,
+#pos2:checked ~ .css-section #pos2Codigo,
+#pos3:checked ~ .css-section #pos3Codigo,
+#iconSmall:checked ~ .css-section #iconSmallCode,
+#iconMedium:checked ~ .css-section #iconMediumCode,
+#iconLarge:checked ~ .css-section #iconLargeCode,
+#marginToggle:checked ~ .css-section #marginCodigo,
+#paddingToggle:checked ~ .css-section #paddingCodigo,
+#borderToggle:checked ~ .css-section #borderCodigo {
+  display: block;
+}
+
+/* Seções */
+.section {
+  margin-top: 40px;
+}
+
+details {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  width: fit-content;
+  margin: 10px auto;
+  text-align: left;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #222;
+}
+
+summary:hover {
+  color: #0077ff;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+label:hover {
+  color: #0077ff;
+}
