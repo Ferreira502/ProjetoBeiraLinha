@@ -1,0 +1,159 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: cyan;
+    border-bottom: 3px solid cyan;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+header {
+    background-color: #111;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+
+img {
+    height: 100px;
+    display: none;
+}
+
+input[type="text"] {
+    display: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: cyan;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+    display: none;
+}
+
+button:hover {
+    background-color: #00cccc;
+}
+
+/* Mostra elementos HTML quando checkboxes estão marcados */
+#logoToggle:checked ~ header img,
+#pesquisaToggle:checked ~ header input,
+#pesquisaToggle:checked ~ header .searchBtn,
+#favoritoToggle:checked ~ header .favBtn,
+#carrinhoToggle:checked ~ header .cartBtn {
+    display: inline-block;
+}
+
+/* Mostra códigos HTML */
+pre {
+    display: none;
+    background-color: #1a1a1a;
+    color: #00ff99;
+    text-align: left;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    white-space: pre;
+}
+
+#logoToggle:checked ~ .html-section #logoCodigo,
+#pesquisaToggle:checked ~ .html-section #pesquisaCodigo,
+#favoritoToggle:checked ~ .html-section #favoritosCodigo,
+#carrinhoToggle:checked ~ .html-section #carrinhoCodigo {
+    display: block;
+}
+
+/* ---------------- CSS SECTION ---------------- */
+
+/* Aplica tamanho */
+#tamanhoToggle:checked ~ header {
+    height: 100px;
+}
+
+/* Aplica posicionamento */
+#posicionamentoToggle:checked ~ header {
+    justify-content: space-between;
+}
+
+/* Box model - margin */
+#marginToggle:checked ~ header {
+    margin: 20px;
+}
+
+/* Box model - padding */
+#paddingToggle:checked ~ header {
+    padding: 25px;
+}
+
+/* Box model - border */
+#borderToggle:checked ~ header {
+    border: 2px solid cyan;
+    border-radius: 10px;
+}
+
+/* Mostra códigos CSS */
+#tamanhoToggle:checked ~ .css-section #tamanhoCodigo,
+#posicionamentoToggle:checked ~ .css-section #posicionamentoCodigo,
+#marginToggle:checked ~ .css-section #marginCodigo,
+#paddingToggle:checked ~ .css-section #paddingCodigo,
+#borderToggle:checked ~ .css-section #borderCodigo {
+    display: block;
+}
+
+/* Estilo das seções */
+.section {
+    margin-top: 40px;
+}
+
+details {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin: 10px auto;
+    text-align: left;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+summary:hover {
+    color: cyan;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+label:hover {
+    color: cyan;
+}
