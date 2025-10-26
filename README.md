@@ -20,8 +20,7 @@ Durante o projeto, os alunos aprendem a construir páginas estruturadas, aplicar
 ## 🧠 Conteúdos Abordados
 - Estrutura básica de uma página HTML  
 - Estilização com CSS (cores, fontes, margens, espaçamento, posicionamento)  
-- Criação de layouts com **Flexbox** e **CSS Grid**  
-- Introdução ao **JavaScript** e manipulação do **DOM**  
+- Criação de layouts com **Flexbox** e **CSS Grid**   
 - Responsividade e design adaptável  
 - Introdução ao uso do **Git e GitHub**  
 
