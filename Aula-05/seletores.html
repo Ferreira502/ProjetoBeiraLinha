@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seletores.css">
+    <title>Seletores e Combinações CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Seletores e Combinações CSS</h1>
+        <p>Compreenda como selecionar elementos HTML para estilização</p>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>Tipos de Seletores</h2>
+            
+            <div class="info-box">
+                <p>Seletores definem quais elementos HTML o CSS vai estilizar.</p>
+            </div>
+            
+            <h3>Seletor Universal</h3>
+            <p>Aplica estilos a todos os elementos da página.</p>
+            <div class="code-example">
+                * {<br>
+                &nbsp;&nbsp;box-sizing: border-box;<br>
+                &nbsp;&nbsp;margin: 0;<br>
+                &nbsp;&nbsp;padding: 0;<br>
+                }
+            </div>
+            
+            <h3>Seletor de Tipo</h3>
+            <p>Seleciona elementos pelo nome da tag HTML.</p>
+            <div class="code-example">
+                p {<br>
+                &nbsp;&nbsp;color: blue;<br>
+                &nbsp;&nbsp;margin-bottom: 10px;<br>
+                }
+            </div>
+            
+            <h3>Seletor de Classe</h3>
+            <p>Seleciona elementos com um atributo class específico.</p>
+            <div class="code-example">
+                .destaque {<br>
+                &nbsp;&nbsp;background-color: #e6f7ff;<br>
+                &nbsp;&nbsp;border-left: 4px solid #1890ff;<br>
+                &nbsp;&nbsp;padding: 10px;<br>
+                }
+            </div>
+            
+            <h3>Seletor de ID</h3>
+            <p>Seleciona um elemento com um ID específico (deve ser único na página).</p>
+            <div class="code-example">
+                #principal {<br>
+                &nbsp;&nbsp;font-weight: bold;<br>
+                &nbsp;&nbsp;color: #1890ff;<br>
+                &nbsp;&nbsp;font-size: 1.2rem;<br>
+                }
+            </div>
+            
+            <h3>Seletor de Atributo</h3>
+            <p>Seleciona elementos com um atributo específico.</p>
+            <div class="code-example">
+                [type="text"] {<br>
+                &nbsp;&nbsp;border: 2px solid #52c41a;<br>
+                &nbsp;&nbsp;padding: 8px;<br>
+                &nbsp;&nbsp;border-radius: 4px;<br>
+                &nbsp;&nbsp;width: 100%;<br>
+                }
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Combinações de Seletores</h2>
+            
+            <div class="info-box">
+                <p>Combinamos seletores para criar regras mais específicas.</p>
+            </div>
+            
+            <h3>Combinação Descendente</h3>
+            <p>Seleciona elementos que estão dentro de outro elemento, em qualquer nível.</p>
+            <div class="code-example">
+                div p {<br>
+                &nbsp;&nbsp;color: red;<br>
+                }
+            </div>
+            
+            <h3>Combinação Filho Direto</h3>
+            <p>Seleciona apenas os elementos que são filhos diretos de outro elemento.</p>
+            <div class="code-example">
+                div > p {<br>
+                &nbsp;&nbsp;color: blue;<br>
+                }
+            </div>
+            
+            <h3>Combinação Irmão Adjacente</h3>
+            <p>Seleciona o elemento que vem imediatamente após outro elemento.</p>
+            <div class="code-example">
+                h1 + p {<br>
+                &nbsp;&nbsp;font-style: italic;<br>
+                }
+            </div>
+            
+            <h3>Combinação Irmão Geral</h3>
+            <p>Seleciona todos os elementos que são irmãos de outro elemento e vêm depois dele.</p>
+            <div class="code-example">
+                h1 ~ p {<br>
+                &nbsp;&nbsp;padding-left: 15px;<br>
+                }
+            </div>
+            
+            <h3>Combinação Múltipla</h3>
+            <p>Aplica o mesmo estilo a vários seletores diferentes.</p>
+            <div class="code-example">
+                h1, h2, h3 {<br>
+                &nbsp;&nbsp;font-family: 'Arial', sans-serif;<br>
+                }
+            </div>
+        </section>
+    </div>
+    
+    <section class="section">
+        <h2>Demonstração Prática</h2>
+        
+        <div class="demo-area container-demo">
+            <h3>Título dentro da div</h3>
+            <p>Este parágrafo é filho direto da div.</p>
+            <p>Este também é um parágrafo filho direto.</p>
+            <div class="elemento hover-effect">
+                <p>Este parágrafo está dentro de outra div (neto da div principal).</p>
+            </div>
+            
+            <h3>Outro título</h3>
+            <p>Parágrafo após o segundo título.</p>
+            <p>Outro parágrafo após o segundo título.</p>
+            
+            <div class="destaque elemento hover-effect">
+                Este elemento tem a classe "destaque".
+            </div>
+            
+            <div id="principal" class="elemento hover-effect">
+                Este elemento tem o ID "principal".
+            </div>
+            
+            <input type="text" placeholder="Campo de texto com type='text'">
+            <input type="password" placeholder="Campo de senha (não será estilizado)">
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Resumo dos Seletores</h2>
+        
+        <ul class="selector-list">
+            <li><span class="highlight">*</span> - Seletor Universal</li>
+            <li><span class="highlight">p</span> - Seletor de Tipo (tag)</li>
+            <li><span class="highlight">.classe</span> - Seletor de Classe</li>
+            <li><span class="highlight">#id</span> - Seletor de ID</li>
+            <li><span class="highlight">[atributo]</span> - Seletor de Atributo</li>
+            <li><span class="highlight">seletor1 seletor2</span> - Descendente</li>
+            <li><span class="highlight">seletor1 > seletor2</span> - Filho Direto</li>
+            <li><span class="highlight">seletor1 + seletor2</span> - Irmão Adjacente</li>
+            <li><span class="highlight">seletor1 ~ seletor2</span> - Irmão Geral</li>
+            <li><span class="highlight">seletor1, seletor2</span> - Múltiplos Seletores</li>
+        </ul>
+    </section>
+    
+</body>
+</html>

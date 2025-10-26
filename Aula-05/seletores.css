@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2575fc;
+    margin: 30px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+h3 {
+    color: #6a11cb;
+    margin: 20px 0 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.section {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.code-example {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+}
+
+.demo-area {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.highlight {
+    background-color: #fffacd;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* ========== ESTILOS DEMONSTRATIVOS DOS SELETORES ========== */
+
+/* Seletor Universal */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Seletor de Tipo */
+p {
+    margin-bottom: 10px;
+}
+
+/* Seletor de Classe */
+.destaque {
+    background-color: #e6f7ff;
+    border-left: 4px solid #1890ff;
+    padding: 10px;
+}
+
+/* Seletor de ID */
+#principal {
+    font-weight: bold;
+    color: #1890ff;
+    font-size: 1.2rem;
+}
+
+/* Seletor de Atributo */
+[type="text"] {
+    border: 2px solid #52c41a;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Combinação Descendente */
+.container-demo p {
+    color: #722ed1;
+}
+
+/* Combinação Filho Direto */
+.container-demo > h3 {
+    color: #eb2f96;
+    text-decoration: underline;
+}
+
+/* Combinação Irmão Adjacente */
+h3 + p {
+    font-style: italic;
+    color: #fa8c16;
+}
+
+/* Combinação Irmão Geral */
+h3 ~ p {
+    padding-left: 15px;
+}
+
+/* Combinação Múltipla */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para elementos interativos */
+.elemento {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+.hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    background-color: #e6fffb;
+    border: 1px solid #87e8de;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.selector-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.selector-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.selector-list li:last-child {
+    border-bottom: none;
+}
