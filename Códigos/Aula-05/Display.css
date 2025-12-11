@@ -1,0 +1,117 @@
+/* ----- Estilos Gerais ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----- Cabeçalho ----- */
+header {
+  text-align: center;
+  padding: 30px 10px;
+  background: #0077cc;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ----- Conteúdo Principal ----- */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 10%;
+  flex: 1;
+}
+
+/* ----- Cartões ----- */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* ----- Flexbox ----- */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.box {
+  background: #0077cc;
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+/* ----- Grid ----- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  background: #fff3e0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.item {
+  background: #ff9800;
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}

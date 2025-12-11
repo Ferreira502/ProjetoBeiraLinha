@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+/* Exemplos de Hover */
+.hover-examples {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hover-box {
+    background: #2c3e50;
+    color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeitos Hover */
+.hover-1:hover {
+    background: #e74c3c;
+    transform: scale(1.1);
+}
+
+.hover-2:hover {
+    background: #3498db;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hover-3:hover {
+    background: #2ecc71;
+    border-radius: 50%;
+    transform: rotate(15deg);
+}
+
+.hover-4:hover {
+    background: #f39c12;
+    width: 180px;
+    height: 180px;
+}
+
+.hover-5:hover {
+    background: #9b59b6;
+    opacity: 0.8;
+    transform: skewX(-5deg);
+}
+
+.hover-6:hover {
+    background: linear-gradient(45deg, #ff6b6b, #48dbfb);
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Cards com hover */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.card-header {
+    height: 40%;
+    background: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 20px;
+    height: 60%;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-header {
+    background: #e74c3c;
+}
+
+/* Botão com hover */
+.button-example {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
