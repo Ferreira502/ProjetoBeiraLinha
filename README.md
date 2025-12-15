@@ -11,6 +11,8 @@ A iniciativa visa capacitar os participantes para o mercado de trabalho digital 
 
 ## 🎯 Objetivos e Metodologia da Oficina de Programação Web
 **Nossos Objetivos**
+
+
 A **Oficina de Programação Web** apresenta os primeiros passos para quem deseja ingressar no universo do desenvolvimento de sites. Nossos objetivos principais foram:
 - Ensinar os fundamentos de **HTML**, **CSS** e **JavaScript**.  
 - Introduzir conceitos básicos da internet e boas práticas de desenvolvimento web.
@@ -19,7 +21,9 @@ A **Oficina de Programação Web** apresenta os primeiros passos para quem desej
 - Promover o **aprendizado prático** por meio de projetos e desafios.   
 - Estimular a **colaboração e criatividade** entre os participantes.
 
-**🧠 Metodologia de Ensino**
+**Metodologia de Ensino**
+
+
 Com o foco em maximizar a atenção dos alunos em sala de aula, a metodologia de ensino adotada por nós monitores foi centrada na interatividade e na prática, minimizando o conteúdo teórico maçante:
 - **Aulas teóricas**: Os conceitos de HTML e CSS eram introduzidos de forma concisa, porém completa, para servir como base para a prática.
 - **Atividades Interativas**: O aprendizado era consolidado através de atividades dinâmicas e quizzes que incentivavam a codificação em tempo real.
