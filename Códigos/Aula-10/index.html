@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios de Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Lista de Exercícios — Flexbox</h1>
+    <p>Modifique SOMENTE o HTML conforme solicitado em cada questão.</p>
+
+    <!-- QUESTÃO 1 -->
+    <div class="caixa">
+        <h3>1) Alinhar itens no centro (eixo principal)</h3>
+        <!-- Tarefa: Adicione justify-content:center -->
+        <div class="container" style="justify-content:flex-start;">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 2 -->
+    <div class="caixa">
+        <h3>2) Alinhar itens no final (cross axis)</h3>
+        <!-- Tarefa: Adicione align-items:flex-end -->
+        <div class="container" style="align-items:flex-start; height:120px;">
+            <div class="item" style="height:30px;">A</div>
+            <div class="item" style="height:60px;">B</div>
+            <div class="item" style="height:40px;">C</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 3 -->
+    <div class="caixa">
+        <h3>3) Mudar direção para coluna</h3>
+        <!-- Tarefa: Altere flex-direction para column -->
+        <div class="container" style="flex-direction:row;">
+            <div class="item">X</div>
+            <div class="item">Y</div>
+            <div class="item">Z</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 4 -->
+    <div class="caixa">
+        <h3>4) Espaçar igualmente os itens</h3>
+        <!-- Tarefa: Coloque justify-content:space-between -->
+        <div class="container" style="justify-content:flex-start;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 5 -->
+    <div class="caixa">
+        <h3>5) Permitir quebra de linha</h3>
+        <!-- Tarefa: Adicione flex-wrap:wrap -->
+        <div class="container" style="flex-wrap:nowrap; width:200px;">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 6 -->
+    <div class="caixa">
+        <h3>6) Aumentar um item usando flex-grow</h3>
+        <!-- Tarefa: No HTML, coloque style="flex-grow:2" no item 2 -->
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 7 -->
+    <div class="caixa">
+        <h3>7) Centralizar tudo no centro do container</h3>
+        <!-- Tarefa: justify-content:center e align-items:center -->
+        <div class="container" style="height:150px; justify-content:flex-start; align-items:flex-start;">
+            <div class="item">OK</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 8 -->
+    <div class="caixa">
+        <h3>8) Colocar um item no fim usando align-self</h3>
+        <!-- Tarefa: No HTML, adicione style="align-self:flex-end" no item 3 -->
+        <div class="container" style="height:130px;">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 9 -->
+    <div class="caixa">
+        <h3>9) Inverter a ordem dos itens</h3>
+        <!-- Tarefa: Coloque flex-direction:row-reverse -->
+        <div class="container" style="flex-direction:row;">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+    </div>
+
+    <!-- QUESTÃO 10 -->
+    <div class="caixa">
+        <h3>10) Transformar todos os itens em quadrados iguais</h3>
+        <!-- Tarefa: Acrescente flex:1 em todos os .item -->
+        <div class="container" style="height:100px;">
+            <div class="item">Q1</div>
+            <div class="item">Q2</div>
+            <div class="item">Q3</div>
+        </div>
+    </div>
+
+</body>
+</html>

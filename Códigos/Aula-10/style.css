@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    padding: 20px;
+}
+
+.caixa {
+    background: white;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 2px solid #ccc;
+}
+
+.exemplo {
+    background: lightblue;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid blue;
+    margin: 10px 0;
+}
+
+/* ====== RESPOSTAS DAS QUESTÕES ====== */
+
+/* 1) width: 300px */
+.q1 {
+    width: 300px;
+}
+
+/* 2) padding: 40px */
+.q2 {
+    padding: 40px;
+}
+
+/* 3) margin-top: 50px */
+.q3 {
+    margin-top: 50px;
+}
+
+/* 4) border: 5px solid red */
+.q4 {
+    border: 5px solid red;
+}
+
+/* 5) padding: 10px 40px */
+.q5 {
+    padding: 10px 40px;
+}
+
+/* 6) margin: auto */
+.q6 {
+    margin: auto;
+}
+
+/* 7) height: 120px */
+.q7 {
+    height: 120px;
+}
+
+/* 8) background: #ddd */
+.q8 {
+    background: #ddd;
+}
+
+/* 9) margin-left e margin-right: 60px */
+.q9 {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* 10) border-radius: 20px */
+.q10 {
+    border-radius: 20px;
+}

@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    width: 238px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#display {
+    width: 97%;
+    height: 40px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 50px;
+    height: 40px;
+    font-size: 18px; 
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.wide { width: 110px;}
